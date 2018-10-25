@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imagecontainer {
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .images {
+            width: 2400px;
+            height: 400px;
+            position: relative;
+            transition: left 2s;
+        }
+
+        .image {
+            margin: 0;
+            padding: 0;
+            float: left;
+
+        }
+
+        .buttons {
+            position: relative;
+            top: -20px;
+        }
+
+        .slider-buttons {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        #img1:target~.images {
+            left: 0;
+        }
+
+        #img2:target~.images {
+            left: -800px;
+        }
+
+        #img3:target~.images {
+            left: -1600px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="imagecontainer">
+        <span id="img1"></span>
+        <span id="img2"></span>
+        <span id="img3"></span>
+        <div class="images">
+            <img src="img/1.jpg" class="image" alt="">
+            <img src="img/2.jpg" class="image" alt="">
+            <img src="img/3.jpg" class="image" alt="">
+        </div>
+        <div class="buttons">
+            <a href="#img1" class="slider-buttons"></a>
+            <a href="#img2" class="slider-buttons"></a>
+            <a href="#img3" class="slider-buttons"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
