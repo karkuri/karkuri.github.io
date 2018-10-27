@@ -1,0 +1,291 @@
+@media only screen and (max-width:1140px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    /*--banner start here--*/
+    .text {
+        margin-left: 20px;
+    }
+
+    /*--work--*/
+    .col1,
+    .col2,
+    .col3,
+    .col4,
+    .col5,
+    .col6 {
+        padding: 90px 0;
+    }
+
+    /*--footer--*/
+    footer {
+        padding: 50px 50px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width:980px) {
+    .name {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    ul li,
+    .ti-user,
+    .ti-settings,
+    .ti-briefcase,
+    .ti-hand-point-right {
+        font-size: 15px;
+    }
+
+    a {
+        padding-bottom: 2px;
+    }
+
+    /*--banner start here--*/
+    .text {
+        margin-left: 40px;
+    }
+
+    /*--work section--*/
+    .col1,
+    .col2,
+    .col3,
+    .col4,
+    .col5,
+    .col6 {
+        padding: 75px 0;
+    }
+
+    /*--contact form--*/
+    .contact-form-section {
+        margin-top: 100px;
+    }
+
+    .contactform h3 {
+        padding: 40px 0 25px;
+    }
+
+    /*--footer--*/
+    .profile {
+        padding: 80px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .footright {
+        margin-top: 125px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .text > p {
+        font-size: 16px;
+    }
+
+    /*--end of banner--*/
+    /*--start of work--*/
+    .col1,
+    .col2,
+    .col3,
+    .col4,
+    .col5,
+    .col6 {
+        width: 50%;
+    }
+
+    .worktext h3 {
+        margin: 20px 0;
+    }
+
+    .secwork {
+        margin: 60px 0;
+    }
+
+    /*--form--*/
+    form {
+        width: 80%;
+    }
+
+    .contactform h3 {
+        font-size: 16px;
+    }
+
+    textarea,
+    input {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    button {
+        margin: 25px 0;
+        font: normal 14px/16px Poppins;
+    }
+
+    /*---footer--*/
+    .footleft {
+        float: none;
+    }
+
+    .profile {
+        float: left;
+        padding: 70px;
+    }
+
+    .mailp {
+        padding-top: 5px;
+    }
+
+    .footright {
+        float: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .social {
+        display: inline-block;
+    }
+
+    .detail {
+        margin-top: 10px;
+    }
+
+    .detail a {
+        font-size: 16px;
+    }
+
+    /*--skills--*/
+    .design,
+    .development,
+    .trainer {
+        padding: 250px 0 0 0;
+    }
+
+    /*--footer--*/
+    footer {
+        padding: 50px 20px;
+    }
+
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .name {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .navigation nav ul li {
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .ti-user,
+    .ti-settings,
+    .ti-briefcase,
+    .ti-hand-point-right {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+
+    /*--start of banner--*/
+
+    h2 {
+        padding-top: 30px;
+        font: normal 30px/30px Poppins;
+        margin-bottom: 20px;
+    }
+
+    .text > p {
+        margin-top: 10px;
+        font: normal 16px/16px Poppins;
+    }
+
+    .contactme {
+        margin: 30px 0;
+        font: normal 16px/20px Poppins;
+        padding: 5px 30px;
+    }
+
+    /*--start of work--*/
+    .col1,
+    .col2,
+    .col3,
+    .col4,
+    .col5,
+    .col6 {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    /*--form--*/
+    form {
+        width: 100%;
+    }
+
+    /*--footer--*/
+    .profile {
+        padding: 40px;
+    }
+
+    .ti-mobile,
+    .ti-email {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .detail a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .detail {
+        margin-top: 5px;
+    }
+
+    .mailp {
+        padding-top: 0;
+    }
+
+    .btn {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 50px 10px;
+    }
+
+    /*---skills--*/
+    .design,
+    .development,
+    .trainer {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+
+}
