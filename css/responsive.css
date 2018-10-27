@@ -181,6 +181,15 @@
         padding: 50px 20px;
     }
 
+    /*--skills--*/
+    .design,
+    .development,
+    .trainer {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+
 
 }
 
@@ -280,12 +289,6 @@
     }
 
     /*---skills--*/
-    .design,
-    .development,
-    .trainer {
-        width: 80%;
-        margin: 5% 10%;
-    }
 
 
 }
