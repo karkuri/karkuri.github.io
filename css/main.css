@@ -280,7 +280,7 @@ h2 {
 }
 
 section .wrapper p {
-    font: normal 20px/20px Poppins;
+    font: normal 18px/20px Poppins;
     text-align: center;
 }
 
@@ -524,6 +524,7 @@ input {
     -moz-border-radius: 20px;
     -moz-box-shadow: 0 0 2px 0 #c0c0c0;
     margin: 15px 0;
+    outline: none;
 }
 
 textarea {

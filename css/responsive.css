@@ -189,7 +189,16 @@
         margin: 5% 10%;
     }
 
+    .design::before,
+    .development::before,
+    .trainer::before {
+        height: 75%;
 
+    }
+
+    section .wrapper p {
+        font-size: 16px;
+    }
 
 }
 
