@@ -293,7 +293,7 @@ section .wrapper p {
     width: 30%;
     box-shadow: 0 0 3px 0 #006633;
     border-radius: 20px;
-    -webkit-box-shadow: 0 0 3px 0 #006633;
+    -webkit-box-shadow: 0 0 5px 0 #808080;
     -webkit-border-radius: 20px;
     -moz-box-shadow: 0 0 3px 0 #006633;
     -moz-border-radius: 20px;

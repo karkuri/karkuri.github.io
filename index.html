@@ -137,23 +137,12 @@
             var windowHeight = $(window).height();
             var windowTotal = windowScrollPosTop + windowHeight;
 
-            $.fn.krishneffect = function(dir, speed) {
+            $.fn.krishneffect = function(speed) {
                 return this.each(function() {
                     if (!$(this).hasClass("hidden")) {
-                        if (dir == "right") {
-                            $(this).css({
-                                "position": "relative",
-                                "opacity": 0,
-                                "right": "-100px"
-                            });
-                        } else {
-                            $(this).css({
-                                "position": "relative",
-                                "opacity": 0,
-                                "left": "-100px"
-                            });
-                        }
-                        $(this).addClass("hidden");
+                        $(this).css({
+                            "opacity": 0
+                        }).addClass("hidden");
                     }
 
                     var objectOffset = $(this).offset();
@@ -161,8 +150,7 @@
                     if (!$(this).hasClass("animationComplete")) {
                         if (windowTotal > objectOffsetTop) {
                             $(this).animate({
-                                "left": "0",
-                                "opacity": "1"
+                                "opacity": 1
                             }, speed).addClass("animationComplete");
                         }
                     }
@@ -174,7 +162,8 @@
                 windowHeight = $(window).height();
                 windowTotal = windowScrollPosTop + windowHeight;
 
-                $(".design,.development,.trainer").krishneffect("right", 1000);
+                $(".design,.development,.trainer").krishneffect(2500);
+                $(".secwork").krishneffect(2000);
             });
 
 
