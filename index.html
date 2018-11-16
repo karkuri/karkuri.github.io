@@ -8,6 +8,7 @@
     <meta name="keywords" content="web designer,best trainer,web developer,trainer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna-Hyderabad Based WebDeveloper </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="img/fav_icon.png" />
@@ -130,6 +131,56 @@
             </footer>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            var windowScrollPosTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var windowTotal = windowScrollPosTop + windowHeight;
+
+            $.fn.krishneffect = function(dir, speed) {
+                return this.each(function() {
+                    if (!$(this).hasClass("hidden")) {
+                        if (dir == "right") {
+                            $(this).css({
+                                "position": "relative",
+                                "opacity": 0,
+                                "right": "-100px"
+                            });
+                        } else {
+                            $(this).css({
+                                "position": "relative",
+                                "opacity": 0,
+                                "left": "-100px"
+                            });
+                        }
+                        $(this).addClass("hidden");
+                    }
+
+                    var objectOffset = $(this).offset();
+                    var objectOffsetTop = objectOffset.top;
+                    if (!$(this).hasClass("animationComplete")) {
+                        if (windowTotal > objectOffsetTop) {
+                            $(this).animate({
+                                "left": "0",
+                                "opacity": "1"
+                            }, speed).addClass("animationComplete");
+                        }
+                    }
+                })
+            }
+
+            $(window).scroll(function() {
+                windowScrollPosTop = $(window).scrollTop();
+                windowHeight = $(window).height();
+                windowTotal = windowScrollPosTop + windowHeight;
+
+                $(".design,.development,.trainer").krishneffect("right", 1000);
+            });
+
+
+        });
+
+    </script>
 </body>
 
 </html>
